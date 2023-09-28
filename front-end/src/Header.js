@@ -21,6 +21,21 @@ const Header = props => {
           <li className="nav-item">
             <Link to="/messages">Messages</Link>
           </li>
+<<<<<<< Updated upstream
+=======
+          <li className="nav-item">
+            <Link to="/AboutMe">AboutMe</Link>
+          </li>
+          <li className="nav-item">
+            {user ? (
+              <Link to="/logout" onClick={handleLogout}>
+                Log out {user.handle}
+              </Link>
+            ) : (
+              <Link to="/login">Log in</Link>
+            )}
+          </li>
+>>>>>>> Stashed changes
         </ul>
       </nav>
     </header>
