@@ -3,9 +3,9 @@ import './App.css'
 import Messages from './Messages'
 import MessageStandalone from './MessageStandalone'
 import Home from './Home'
-import AboutMe from './AboutMe'
 import Header from './Header'
 import Footer from './Footer'
+import AboutMe from './AboutMe'
 
 const App = props => {
   return (
@@ -14,7 +14,6 @@ const App = props => {
         <Header />
         <main className="App-main">
           <Routes>
-<<<<<<< Updated upstream
             {/* a route for the home page */}
             <Route path="/" element={<Home />} />
 
@@ -26,13 +25,8 @@ const App = props => {
               path="/messages/:messageId"
               element={<MessageStandalone />}
             />
-=======
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/messages" element={<Messages />}></Route>
-            <Route path="/signup" element={<Signup />}></Route>
-            <Route path="/login" element={<Login />}></Route>
-            <Route path="/AboutMe" element={<AboutMe />}></Route>
->>>>>>> Stashed changes
+
+            <Route path="/AboutMe" element={<AboutMe />} />
           </Routes>
         </main>
         <Footer />
